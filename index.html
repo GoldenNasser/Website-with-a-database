@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+    <style>
+        /* Base page styling for a relaxing atmosphere */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9f0f4; /* Soft, relaxing pastel blue/gray */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Modern card container */
+        .form-container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 320px;
+        }
+
+        /* Clean typography */
+        h2 {
+            color: #5c7482;
+            margin-top: 0;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #7a8b94;
+            font-size: 0.9em;
+        }
+
+        /* Input field styling */
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dce4e8;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 1em;
+            color: #333;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Gentle focus effect */
+        input[type="text"]:focus,
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #9cb4c4;
+        }
+
+        /* Soft, inviting submit button */
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px;
+            background-color: #9cb4c4;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #849ca9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Your Details</h2>
+        <form action="new.php" method="get">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>
